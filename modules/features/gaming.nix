@@ -4,7 +4,12 @@
   ...
 }: {
   flake.nixosModules.gaming = {pkgs, ...}: {
-    programs.steam.enable = true;
+    programs.steam = {
+      enable = true;
+      extraCompatPackages = with pkgs; [
+        proton-ge-bin
+      ];
+    };
     programs = {
       gamemode.enable = true;
       gamescope = {
@@ -13,7 +18,6 @@
       };
     };
     environment.systemPackages = with pkgs; [
-      protonplus
       goverlay
       heroic
     ];
