@@ -5,13 +5,12 @@
 }: {
   # This is your system configuration entry-point
   flake.nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
-    modules = [
-      self.nixosModules.nixosHardware
-      self.nixosModules.nixosModule
-      self.nixosModules.homeManager
-      self.nixosModules.gaming
-      self.nixosModules.niri
-      self.nixosModules.ssh
+    modules = with self.nixosModules; [
+      nixosHardware
+      nixosModule 
+      gaming
+      niri
+      ssh
     ];
   };
   # This is your configuration.nix, a place where you configure your system
