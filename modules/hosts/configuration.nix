@@ -65,6 +65,9 @@
       autosuggestions.enable = true;
       syntaxHighlighting.enable = true;
     };
+    programs.git = {
+      enable = true;
+    };
     users.users.sock = {
       shell = pkgs.zsh;
       isNormalUser = true;
@@ -79,7 +82,6 @@
       alejandra
       nixd
       micro
-      git
       nh
     ];
     nixpkgs.config.allowUnfree = true;
