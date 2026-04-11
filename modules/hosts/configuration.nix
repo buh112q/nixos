@@ -62,6 +62,9 @@
       alsa.support32Bit = true;
       wireplumber.enable = true;
     };
+    programs.fish = {
+    	enable = true;
+    };
     programs.zsh = {
       enable = true;
       enableCompletion = true;
@@ -86,7 +89,7 @@
       };
     };
     users.users.sock = {
-      shell = pkgs.zsh;
+      shell = pkgs.fish;
       isNormalUser = true;
       extraGroups = [
         "wheel"
