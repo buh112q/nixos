@@ -34,8 +34,8 @@
     environment.systemPackages = with pkgs; [
       xwayland-satellite
       wl-clipboard
-      ghostty
       nautilus
+      kitty
     ];
   };
 }
