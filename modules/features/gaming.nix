@@ -16,12 +16,11 @@
       };
       gamescope = {
         enable = true;
-        # capSysNice = true;
       };
     };
     environment.systemPackages = with pkgs; [
-      prismlauncher
       goverlay
+      mangohud
       heroic
     ];
   };
