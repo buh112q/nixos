@@ -62,6 +62,7 @@
       alsa.support32Bit = true;
       wireplumber.enable = true;
     };
+    programs.nix-index.enable = true;
     programs.nh = {
       enable = true;
       clean = {
@@ -97,7 +98,6 @@
       nixd
       micro
       comma
-      nix-index
     ];
     nixpkgs.config.allowUnfree = true;
     system.stateVersion = "25.11";
