@@ -96,6 +96,8 @@
       alejandra
       nixd
       micro
+      comma
+      nix-index
     ];
     nixpkgs.config.allowUnfree = true;
     system.stateVersion = "25.11";
