@@ -10,7 +10,8 @@
       flatpak
       fonts
       gaming
-      niri
+      # niri-dms
+      niri-noctalia
       ssh
       apps
     ];

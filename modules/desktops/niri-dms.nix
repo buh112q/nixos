@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  flake.nixosModules.niri = {pkgs, ...}: {
+  flake.nixosModules.niri-dms = {pkgs, ...}: {
     services.displayManager = {
       ly.enable = true;
       defaultSession = "niri";
