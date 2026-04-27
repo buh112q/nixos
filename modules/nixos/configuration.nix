@@ -98,8 +98,6 @@
     environment.systemPackages = with pkgs; [
       micro
       neovim
-      alejandra
-      nixd
       comma
     ];
     nixpkgs.config.allowUnfree = true;
