@@ -11,15 +11,20 @@
       enable = true;
       settings = {
         vim = {
-          extraPackages = with pkgs; [
-            nixd
-            alejandra
-          ];
           theme = {
             enable = true;
             name = "gruvbox";
             style = "dark";
           };
+          options = {
+            tabstop = 2;
+            shiftwidth = 2;
+            expandtab = true;
+          };
+          extraPackages = with pkgs; [
+            nixd
+            alejandra
+          ];
           statusline.lualine.enable = true;
           telescope.enable = true;
           autocomplete.nvim-cmp.enable = true;
