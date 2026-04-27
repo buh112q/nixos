@@ -95,9 +95,10 @@
       packages = with pkgs; [];
     };
     environment.systemPackages = with pkgs; [
+      micro
+      neovim
       alejandra
       nixd
-      micro
       comma
     ];
     nixpkgs.config.allowUnfree = true;
