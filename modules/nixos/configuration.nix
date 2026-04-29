@@ -13,6 +13,7 @@
       ssh
       nvf
       apps
+      waydroid
       # niri-dms
       niri-noctalia
     ];
@@ -37,6 +38,7 @@
       hostName = "nixos";
       networkmanager.enable = true;
       firewall.enable = false;
+      nftables.enable = true;
     };
     time.timeZone = "Asia/Bangkok";
     i18n.defaultLocale = "en_US.UTF-8";
