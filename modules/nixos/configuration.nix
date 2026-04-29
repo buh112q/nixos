@@ -7,14 +7,15 @@
     modules = with self.nixosModules; [
       nixosHardware
       nixosModule
+      waydroid
       flatpak
       gaming
       fonts
       ssh
-      # niri-dms
-      niri-noctalia
       nvf
       apps
+      # niri-dms
+      niri-noctalia
     ];
   };
   flake.nixosModules.nixosModule = {pkgs, ...}: {
