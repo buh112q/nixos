@@ -104,6 +104,7 @@
     system.stateVersion = "25.11";
     nix = {
       channel.enable = false;
+      nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
       registry.nixpkgs.flake = inputs.nixpkgs;
       settings.experimental-features = ["nix-command" "flakes"];
     };
