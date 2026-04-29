@@ -7,7 +7,6 @@
     modules = with self.nixosModules; [
       nixosHardware
       nixosModule
-      waydroid
       flatpak
       gaming
       fonts
