@@ -5,8 +5,8 @@
 }: {
   flake.nixosConfigurations.nixos = inputs.nixpkgs.lib.nixosSystem {
     modules = with self.nixosModules; [
-      nixosHardware
-      nixosModule
+      hardware
+      system
       flatpak
       gaming
       fonts
@@ -18,7 +18,7 @@
       niri-noctalia
     ];
   };
-  flake.nixosModules.nixosModule = {pkgs, ...}: {
+  flake.nixosModules.system = {pkgs, ...}: {
     boot = {
       loader = {
         timeout = 0;
