@@ -17,7 +17,7 @@
       ssh
       nvf
       apps
-      waydroid
+      # waydroid
       # niri-dms
       niri-noctalia
     ];
