@@ -88,6 +88,7 @@
       enable = true;
       useBabelfish = true;
     };
+    programs.starship.enable = true;
     users.users.sock = {
       shell = pkgs.fish;
       isNormalUser = true;
@@ -106,7 +107,7 @@
     system.stateVersion = "25.11";
     nix = {
       channel.enable = false;
-      nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+      nixPath = ["nixpkgs=${inputs.nixpkgs}"];
       registry.nixpkgs.flake = inputs.nixpkgs;
       settings.experimental-features = ["nix-command" "flakes"];
     };
