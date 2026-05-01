@@ -84,11 +84,11 @@
         };
       };
     };
+    programs.starship.enable = true;
     programs.fish = {
       enable = true;
       useBabelfish = true;
     };
-    programs.starship.enable = true;
     users.users.sock = {
       shell = pkgs.fish;
       isNormalUser = true;
